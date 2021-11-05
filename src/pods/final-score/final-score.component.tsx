@@ -78,13 +78,10 @@ export const FinalScoreComponent: React.FC<Props> = props => {
             src={`/assets/results/${resultIcon()}`}
           ></img>
         </div>
-        <div>
           <h5 className={title}>Final score:</h5>
           <h5 className={title}>
-            <span>{`${correct}/${total}`}</span>
-          </h5>
-          {resultMessage()}
-        </div>
+          <span>{`${correct}/${total}`}</span></h5>
+            {resultMessage()}
       </div>
       <Button
         className={nextBtn}
